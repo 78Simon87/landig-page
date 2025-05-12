@@ -308,8 +308,11 @@ body{
  }
 
  .contenedor-2{
-    overflow-x: scroll;
     margin-left: 750px;
+ }
+
+ .contenedor-cards-p{
+    overflow-x: scroll;
  }
 
 .fondo_1 h2{
