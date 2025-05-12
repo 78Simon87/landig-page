@@ -252,11 +252,20 @@ body{
     flex-direction: column;
 }
 
-.contenedor-cards-p h3{
+.subtext{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtext h3{
     font-size: 20px;
-    margin: 06%;
-    color: rgba(0, 0, 0, 0.63)
-    ;
+    color: rgba(0, 0, 0, 0.63);
+
 }
 
 .contenedor-2{
@@ -308,7 +317,7 @@ body{
  }
 
  .contenedor-2{
-    margin-left: 800px;
+    margin-left: 820px;
  }
 
  .contenedor-cards-p{
