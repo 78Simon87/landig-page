@@ -250,7 +250,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .contenedor-cards-p h3{
