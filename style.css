@@ -250,7 +250,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: scroll;
 }
 
 .contenedor-cards-p h3{
@@ -308,6 +307,10 @@ body{
     
  }
 
+ .contenedor-2{
+    overflow-x: scroll;
+    margin-left: 750px;
+ }
 
 .fondo_1 h2{
     margin: 10%;
