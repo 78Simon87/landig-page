@@ -3,13 +3,13 @@ const navMenu = document.querySelector(".list");
 
 navToggle.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevenir propagación para que no cierre de inmediato
-  navMenu.classList.toggle("nav_");
+  navMenu.classList.toggle("active");
 });
 
 // Cerrar el menú si se hace clic fuera de él
 document.addEventListener("click", (e) => {
   if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-    navMenu.classList.remove("nav_");
+    navMenu.classList.remove("active");
   }
 });
 
@@ -35,4 +35,25 @@ document.querySelector("#numero").addEventListener("input", function() {
     } else {
       input.setCustomValidity("");
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const animElements = document.querySelectorAll(
+    ".anim-fade-in, .anim-slide-up, .anim-zoom-in, .fade-in-left, .fade-in-right"
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  animElements.forEach((el) => observer.observe(el));
 });

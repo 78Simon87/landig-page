@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +33,6 @@
                         <ion-icon class="us" name="people-outline"></ion-icon></a>
                 </li>
                 <li>
-                    <a href="#contacto">Contacto 
-                            <ion-icon class="contacto" name="person-add-outline"></ion-icon></a>
-                </li>
-                <li>
                     <a href="#planes">
                         Comprar plan <ion-icon name="cart-outline"></ion-icon>
                     </a>
@@ -56,84 +52,88 @@
 </div>
 
 <div class="subtext">
-    <h3>¿También te está pasando esto?</h3>
+    <h2>¿También te está pasando esto?</h2>
 </div> 
 
-<div class="contenedor-cards-p">
-    <div class="contenedor-2">
-        <div class="crad-problem">
-            <ion-icon name="cloud-offline"></ion-icon>
-            <p>¿Tu negocio no tiene visibilidad online?
-No tener un sitio web significa perder el 90% del tráfico que llega a través de búsquedas en Google. Si no estás en internet, es probable que tus clientes no te encuentren.</p>
-        </div>
-
-        <div class="crad-problem">
-            <ion-icon name="heart-dislike"></ion-icon>
-            <p>¿Tu empresa parece menos confiable sin una página web?
-La falta de un sitio web profesional puede hacer que tu negocio pierda credibilidad frente a clientes potenciales. La mayoría espera encontrar una web antes de confiar en tu producto o servicio.</p>
-        </div>
-
-        <div class="crad-problem">
-            <ion-icon name="sad"></ion-icon>
-            <p>¿Tu competencia tiene una ventaja por estar online?
-Si no tienes un sitio web, tus competidores que sí lo tienen estarán captando a los mismos clientes que tú podrías estar perdiendo.</p>
-        </div>
-
-        <div class="crad-problem">
-            <ion-icon name="moon"></ion-icon>
-            <p>¿No puedes vender o captar clientes fuera del horario comercial?
-Sin un sitio web, tu negocio solo está disponible cuando tú lo estás. Una página web te permite generar ventas y captar clientes 24/7.</p>
-        </div>
-        <div class="crad-problem">
-            <ion-icon name="archive"></ion-icon>
-            <p>¿Te resulta difícil recopilar datos sobre tus clientes?
-Sin un sitio web, no puedes analizar el comportamiento de los usuarios ni mejorar tus estrategias. Recopilar datos es clave para entender mejor las necesidades de tus clientes y mejorar tu negocio.</p>
-        </div>
+<!-- Problemas frecuentes -->
+<section class="contenedor-cards-p">
+  <div class="contenedor-2">
+    <div class="crad-problem anim-slide-up">
+      <ion-icon name="cloud-offline"></ion-icon>
+      <p>¿Tu negocio no tiene visibilidad online? No tener un sitio web significa perder el 90% del tráfico que llega a través de búsquedas en Google.</p>
     </div>
-</div>
-    
+
+    <div class="crad-problem anim-slide-up">
+      <ion-icon name="heart-dislike"></ion-icon>
+      <p>¿Tu empresa parece menos confiable sin una página web?
+      La falta de una web profesional hace que pierdas credibilidad.</p>
+    </div>
+
+    <div class="crad-problem anim-slide-up">
+      <ion-icon name="sad"></ion-icon>
+      <p>¿Tu competencia tiene ventaja por estar online?
+      Sin un sitio web, tus competidores captan tus clientes potenciales.</p>
+    </div>
+
+    <div class="crad-problem anim-slide-up">
+      <ion-icon name="moon"></ion-icon>
+      <p>¿No puedes vender fuera del horario comercial?
+      Una web te permite operar 24/7 sin interrupciones.</p>
+    </div>
+
+    <div class="crad-problem anim-slide-up">
+      <ion-icon name="archive"></ion-icon>
+      <p>¿Te resulta difícil recopilar datos de clientes?
+      Un sitio web permite medir, analizar y mejorar tus estrategias.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Beneficios del negocio online -->
 <div class="contenerdor-body">
-    <div class="contenedor-block">
-    <div  class="cards-img">
-        <img src="img\inportancia.jpg" alt="">
-        <div><h3>¿Por que tu negocio necesita estar en internet?</h3>
-        <p>1. Visibilidad Global: Llega a clientes de todo el mundo, sin fronteras.</p></div>
+  <div class="contenedor-block">
+     <h2 class="titulo anim-fade-in">¿Cuales son las <strong>ventajas</strong> de tener un sitio web?</h2>
+    <div class="cards-img anim-fade-in">
+      <img src="img/inportancia.jpg" alt="">
+      <div>
+        <h3>1. Visibilidad Global:</h3>
+        <p>Llega a clientes de todo el mundo, sin fronteras.</p>
+      </div>
     </div>
 
-    <div  class="cards-img">
-        <p>2. Aumenta tu Credibilidad: Los clientes confían más en negocios con presencia online.
-</p>
-        <img src="img\pt-2.jpg" alt="">
+    <div class="cards-img anim-zoom-in">
+      <h3>2. Aumenta tu Credibilidad:</h3>
+      <p>Los clientes confían más en negocios con presencia online.</p>
+      <img src="img/pt-2.jpg" alt="">
     </div>
 
-    <div  class="cards-img">
-        <img src="img\business.png" alt="">
-        <p>3. Alcance y Crecimiento: Tu negocio disponible 24/7, siempre accesible.
-</p>
+    <div class="cards-img anim-fade-in">
+      <img src="img/business.png" alt="">
+      <h3>3. Alcance y Crecimiento:</h3>
+      <p>Tu negocio disponible 24/7, siempre accesible.</p>
     </div>
 
-    <div  class="cards-img">
-        <p>4. Marketing Eficiente: Llega a tu público objetivo con estrategias digitales precisas.</p>
-        <img src="img\marketing.png" alt="">
+    <div class="cards-img anim-zoom-in">
+      <h3>4. Marketing Eficiente:</h3>
+      <p>Llega a tu público objetivo con estrategias digitales precisas.</p>
+      <img src="img/marketing.png" alt="">
     </div>
-    <div  class="cards-img">
-        <img src="img\cliente-satisfecho.jpg" alt="">
-        <p>5. Mayor Retención y Lealtad del Cliente:
-Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es más probable que vuelvan. Un buen SEO contribuye a la creación de contenido valioso, lo que aumenta la lealtad de los usuarios y fomenta visitas recurrentes.
 
- </p>
+    <div class="cards-img anim-slide-up">
+      <img src="img/cliente-satisfecho.jpg" alt="">
+      <h3>5. Mayor Retención del Cliente:</h3>
+      <p>Un buen SEO fideliza usuarios con contenido relevante.</p>
     </div>
-    <div class="cards-img">
-        <p>6. Mantente Competitivo: No quedes atrás frente a la competencia que ya está en línea.
-</p>
-        <img src="img\competencia.jpg" alt="">
+
+    <div class="cards-img anim-fade-in">
+      <h3>6. Mantente Competitivo:</h3>
+      <p>No quedes atrás frente a la competencia que ya está en línea.</p>
+      <img src="img/competencia.jpg" alt="">
     </div>
-</div>
+  </div>
 
-
-
-<section>
-    <form id="contacto" action="https://formsubmit.co/jhonatandavidcastrogalviz@gmail.com" method="POST" class="contenedor-registro">
+  <section>
+    <form id="contacto" action="https://formsubmit.co/jhonatandavidcastrogalviz@gmail.com" method="POST" class="contenedor-registro fade-in-right">
         <div class="registro-formulario" >
             <h2>Registro de contacto</h2>
             <label for="Nombre" >Nombre completo.</label>
@@ -145,15 +145,15 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
             <label for="servicio">Selecciona un servicio:</label>
             <select class="text-input" id="servicio" name="servicio" required>
                 <option value="ninguno">¿Que plan te interesa?</option>
-                <option value="web">Desarrollo Web</option>
-                <option value="seo">Optimización SEO</option>
+                <option value="Desarrollo-web">Desarrollo Web</option>
+                <option value="Optimozacion-seo">Optimización SEO</option>
                 <option value="mantenimiento">Mantenimiento Web</option>
             </select>
 
              <label for="plan">Selecciona un Plan:</label>
             <select class="text-input" id="plan" name="plan" required>
                 <option value="ninguno">Servicio</option>
-                <option value="Landing">Landing Page</option>
+                <option value="Landing-pagr">Landing Page</option>
                 <option value="Pq-Básico">Paquete Básico</option>
                 <option value="Pq-Intermedio">Paquete Intermedio</option>
                 <option value="Pq-Pro+">Paquete Pro+</option>
@@ -175,11 +175,13 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
 </section>
 </div>
 
+
 <section id="planes" class="contenedor-planes">
-  <div class="card-planes">
+  <div class="card-planes fade-in-left">
     <h3>Landing Page</h3>
-    <span>$50 USD</span>
+    <p>$<span>59.99</span>USD</p>
     <ul>
+      <p><strong>Beneficios</strong></p>
       <li>Página única con diseño atractivo y moderno.</li>
       <li>Ideal para campañas, promoción de servicios o productos específicos.</li>
       <li>Hosting gratuito en Vercel y dominio temporal incluido.</li>
@@ -189,10 +191,11 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
     <a class="enviar" href="#contacto"">Adquirir paquete</a>
   </div>
 
-  <div class="card-planes">
+  <div class="card-planes fade-in-left">
     <h3>Paquete Básico</h3>
-    <span>$160 USD</span>
+    <p>$<span>149.99</span>USD</p>
     <ul>
+      <p><strong>Beneficios</strong></p>
       <li>- Sitio web de 3 páginas (Inicio, Servicios, Contacto).</li>
       <li>- Diseño responsivo (adaptado a móvil y escritorio).</li>
       <li>- Hosting gratuito en Vercel y dominio temporal.</li>
@@ -202,10 +205,11 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
     <a class="enviar" href="#contacto"">Adquirir paquete</a>
   </div>
 
-  <div class="card-planes">
+  <div class="card-planes fade-in-left">
     <h3>Paquete Intermedio</h3>
-    <span>$300 USD</span>
+    <p>$<span>299.99</span>USD</p>
     <ul>
+      <p><strong>Beneficios</strong></p>
       <li>- Todo lo del paquete básico.</li>
       <li>- Backend serverless con funciones en la nube (Github, Vercel).</li>
       <li>- Base de datos conectada con PlanetScale.</li>
@@ -216,10 +220,11 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
     <a class="enviar" href="#contacto"">Adquirir paquete</a>
   </div>
 
-  <div class="card-planes">
+  <div class="card-planes fade-in-left">
     <h3>Paquete Pro+</h3>
-    <span>$500+ USD</span>
+    <p>$<span>799.99+</span>USD</p>
     <ul>
+      <p><strong>Beneficios</strong></p>
       <li>Todo lo del paquete intermedio.</li>
       <li>Dashboard administrativo personalizado.</li>
       <li>Soporte y mantenimiento por 1 mes post-lanzamiento.</li>
@@ -231,24 +236,24 @@ Cuando los usuarios encuentran contenido útil y relevante en tu sitio web, es m
 </section>
 
 
-<div id="servicios" class="section">
+<div id="servicios" class="section anim-fade-in">
     <div class="servicios">
         <h3>Diseño Web Responsivo</h3>
         <p>Creación de sitios web que se adaptan a cualquier dispositivo, garantizando una experiencia de usuario fluida en móviles, tabletas y escritorios.</p>
     </div>
-    <div class="servicios">
+    <div class="servicios anim-slide-up">
         <h3>Desarrollo de Páginas Web Básicas</h3>
         <p>Construcción de páginas web sencillas y funcionales para pequeñas empresas o proyectos personales, sin complicaciones y con tiempos de entrega rápidos.</p>
     </div>
-    <div class="servicios">
+    <div class="servicios anim-zoom-in">
         <h3>Optimización SEO Básica</h3>
         <p>Implementación de prácticas básicas de SEO para mejorar la visibilidad de tu sitio en los motores de búsqueda, como la optimización de títulos, descripciones y contenido.</p>
     </div>
-    <div class="servicios">
+    <div class="servicios fade-in-left">
         <h3>Mantenimiento y Actualización de Páginas Web</h3>
         <p>Actualización regular de contenido, imágenes y funcionalidades de tu sitio para mantenerlo siempre actualizado y operativo.</p>
     </div>
-    <div class="servicios">
+    <div class="servicios fade-in-right">
         <h3>Creación de Formularios de Contacto</h3>
         <p>Diseño e implementación de formularios de contacto personalizados para facilitar la comunicación entre los visitantes y el propietario del sitio.</p>
     </div>
