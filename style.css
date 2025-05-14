@@ -382,11 +382,16 @@ body{
     justify-content: space-around;
     align-items: center;
     overflow-x: auto;
-    padding: 5% 3%;
+    padding: 6% 4%;
     width: 100%;
     height: 30rem;
     gap: 15px;
 }
+
+.contenedor-planes::-webkit-scrollbar{
+    display: none;
+}
+
 
 .contenedor-planes .card-planes{
     display: flex;

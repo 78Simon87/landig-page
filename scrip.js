@@ -13,8 +13,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contacto");
 
@@ -28,9 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // setTimeout(() => window.location.href = "/", 1000);
   });
 });
-
-
-
 
 document.querySelector("#numero").addEventListener("input", function() {
     let input = this;
