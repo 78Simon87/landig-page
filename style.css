@@ -1,12 +1,13 @@
 *{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -46,7 +47,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 992px;
+    max-width: 99px;
     margin: 0 auto;
 }
 
