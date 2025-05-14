@@ -144,7 +144,7 @@ body{
 
 .list li {
   list-style: none;
-  width: 100%;
+  width: 90%;
 }
 
 .list li a {
@@ -243,7 +243,6 @@ body{
     gap: 20px;
     max-width: 760px;
     flex-wrap: wrap;
-    border: red solid 1px;
 }
 
 .contenedor-block .titulo {
