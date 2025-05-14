@@ -18,24 +18,17 @@ document.addEventListener("click", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contacto");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevenir el envío normal (opcional si usas backend real)
+  form.addEventListener("submit", () => {
+    // No usar preventDefault: el formulario se enviará
 
-    // Verifica si el formulario es válido con las restricciones HTML
-    if (form.checkValidity()) {
-      alert("✅ Tu información ha sido enviada correctamente.");
-
-      form.reset(); // Limpia el formulario
-
-      // Redirige después de un pequeño delay
-      setTimeout(() => {
-        window.location.href = "/"; // Cambia esto si quieres redirigir a otra ruta
-      }, 1000);
-    } else {
-      alert("❌ Por favor completa todos los campos requeridos.");
-    }
+    alert("✅ Tu información ha sido enviada.");
+    
+    // El form se enviará normalmente, pero puedes redirigir después si usas _next
+    // También puedes hacerlo con un setTimeout si no usas FormSubmit:
+    // setTimeout(() => window.location.href = "/", 1000);
   });
 });
+
 
 
 
