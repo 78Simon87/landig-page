@@ -48,7 +48,7 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .nav-toggle{
@@ -114,7 +114,7 @@ body{
 .head{
     background: var(--color-bg-light);
     height: 60px;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0;
     flex-wrap: wrap;
     word-wrap: break-word;
@@ -128,15 +128,14 @@ body{
   padding: 20px;
    background: var(--color-bg-light);
   border-radius: 10px;
-  width: 95%;  
+  width: 100%;  
   height: 350px;
-  margin: 0px;
+  margin: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   top: 60px;
   transform: translateX(115%); /* se oculta a la derecha */
   transition: transform 0.5s ease-in-out;
   flex-wrap: wrap;
-    overflow-x: hidden;
 }
 .list.active {
   transform: translateX(0); /* vuelve a su lugar */
@@ -146,6 +145,7 @@ body{
 .list li {
   list-style: none;
   width: 90%;
+    margin: 0;
 }
 
 .list li a {
