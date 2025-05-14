@@ -40,6 +40,7 @@ body{
     background: var(--color-bg-light);
     z-index: 1000;
     box-shadow: 0px 5px 10px var(--color-shadow);
+    overflow-x: hidden;
 }
 
 .nav{
@@ -65,6 +66,7 @@ body{
     margin-top: 6px;
     display: flex;
     gap: 20px;
+    overflow-x: hidden;
 }
 
 .list a{
@@ -102,9 +104,8 @@ body{
 @media (max-width: 768px) {
     .nav-toggle{
         display: block;
-        font-size: 60px;
+        font-size: 55px;
         margin-top: -2%;
-        flex-wrap: wrap;
     }
 
     .nav span{
@@ -112,12 +113,13 @@ body{
 }
 
 .head{
-     background: var(--color-bg-light);
+    background: var(--color-bg-light);
     height: 60px;
     max-width: 90%;
     margin: 0;
     flex-wrap: wrap;
     word-wrap: break-word;
+    overflow: hidden;
 }
 
 .list {
@@ -136,6 +138,7 @@ body{
   transform: translateX(115%); /* se oculta a la derecha */
   transition: transform 0.5s ease-in-out;
   flex-wrap: wrap;
+    overflow-x: hidden;
 }
 .list.active {
   transform: translateX(0); /* vuelve a su lugar */
