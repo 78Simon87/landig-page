@@ -27,6 +27,14 @@ body{
   --color-accent: #1abc9c;      /* Verde azulado para resaltar cosas */
   --color-text-dark: #444444;   /* Texto oscuro */
   --color-text-light: #ffffff;  /* Texto claro */
+  --gold-light: #fff8dc;    /* Dorado claro tipo crema */
+  --gold-soft: #f9d976;     /* Dorado suave pastel */
+  --gold: #ffd700;          /* Dorado clásico brillante */
+  --gold-deep: #daa520;     /* Oro más oscuro (goldenrod) */
+  --gold-rich: #b8860b;     /* Oro intenso tipo moneda antigua */
+  --gold-metallic: #c9b037; /* Dorado metálico */
+  --gold-champagne: #f7e7ce;/* Dorado champán, elegante y sutil */
+  --gold-brown: #8b7500;    /* Dorado con toque marrón viejo */
 }
 
 
