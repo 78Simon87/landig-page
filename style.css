@@ -17,6 +17,11 @@ body{
     margin: 0;
 }
 
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 :root {
   /* Colores principales */
