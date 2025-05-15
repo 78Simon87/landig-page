@@ -163,6 +163,7 @@ body{
   text-align: center;
   transition: all 0.3s ease-in-out;
   height: 100%;
+    margin: 0;
 }
 
 
@@ -181,6 +182,7 @@ body{
 
 .contenedor-fondo-1{
     width: auto;
+    margin: 0;
 }
 
 .fondo_1{
@@ -193,6 +195,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .fondo_1 h2{
@@ -236,6 +239,7 @@ body{
     justify-content:space-around;
     flex-wrap: wrap;
     position: relative;
+    margin: 0;
 }
 
 .contenedor-block{
@@ -244,6 +248,7 @@ body{
     gap: 20px;
     max-width: 760px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .contenedor-block .titulo {
@@ -278,6 +283,7 @@ body{
     background-color: white;
     gap: 8px;
     border-radius: 10px;
+    margin: 0;
 }
 
 .text-input{
@@ -314,6 +320,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
 }
 
 .subtext{
@@ -423,6 +430,7 @@ body{
     width: 100%;
     gap: 15px;
     min-height: 35rem;
+    margin: 0;
 }
 
 .contenedor-planes .card-planes{
