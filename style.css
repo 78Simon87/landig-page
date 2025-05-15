@@ -1,13 +1,12 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
 body{
@@ -17,11 +16,6 @@ body{
     margin: 0;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 
 :root {
   /* Colores principales */
@@ -52,8 +46,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin: 0;
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .nav-toggle{
@@ -108,8 +102,9 @@ body{
 @media (max-width: 768px) {
     .nav-toggle{
         display: block;
-        font-size: 55px;
+        font-size: 60px;
         margin-top: -2%;
+        flex-wrap: wrap;
     }
 
     .nav span{
@@ -117,7 +112,7 @@ body{
 }
 
 .head{
-    background: var(--color-bg-light);
+     background: var(--color-bg-light);
     height: 60px;
     max-width: 100%;
     margin: 0;
@@ -130,14 +125,15 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  padding: 20px;
+  padding: 25px;
    background: var(--color-bg-light);
   border-radius: 10px;
   width: 100%;  
   height: 350px;
-  margin: 0;
+  margin: 0px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   top: 60px;
+  left: 0;
   transform: translateX(115%); /* se oculta a la derecha */
   transition: transform 0.5s ease-in-out;
   flex-wrap: wrap;
@@ -149,8 +145,7 @@ body{
 
 .list li {
   list-style: none;
-  width: 90%;
-    margin: 0;
+  width: 100%;
 }
 
 .list li a {
@@ -168,7 +163,6 @@ body{
   text-align: center;
   transition: all 0.3s ease-in-out;
   height: 100%;
-    margin: 0;
 }
 
 
@@ -187,7 +181,6 @@ body{
 
 .contenedor-fondo-1{
     width: auto;
-    margin: 0;
 }
 
 .fondo_1{
@@ -200,7 +193,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
 .fondo_1 h2{
@@ -244,7 +236,6 @@ body{
     justify-content:space-around;
     flex-wrap: wrap;
     position: relative;
-    margin: 0;
 }
 
 .contenedor-block{
@@ -253,7 +244,7 @@ body{
     gap: 20px;
     max-width: 760px;
     flex-wrap: wrap;
-    margin: 0;
+    border: red solid 1px;
 }
 
 .contenedor-block .titulo {
@@ -288,7 +279,6 @@ body{
     background-color: white;
     gap: 8px;
     border-radius: 10px;
-    margin: 0;
 }
 
 .text-input{
@@ -325,7 +315,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
 }
 
 .subtext{
@@ -435,7 +424,6 @@ body{
     width: 100%;
     gap: 15px;
     min-height: 35rem;
-    margin: 0;
 }
 
 .contenedor-planes .card-planes{
