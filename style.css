@@ -239,7 +239,7 @@ html{
 .encabezado p {
   font-size: 1.13rem;
   font-weight: 500;
-  color: var(--color-accent);
+  color: black;
   line-height: 1.7;
   text-shadow: 0 5px 10px var(--color-shadow);
 }
