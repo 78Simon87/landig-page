@@ -91,19 +91,19 @@ body{
 }
 
 .nav span{
-    margin-left: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: auto;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    margin-left: 15px;
 }
 
-.nav span a{
-    color: var(--color-text-dark);
-    font-size: 40px;
-    text-decoration: none;
-    border-radius: 50%;
+.nav span img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 
