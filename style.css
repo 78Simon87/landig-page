@@ -10,8 +10,8 @@ html{
 }
 
 body{
-    padding: 0;
-    background: #f5f4f4;
+    padding-top: 60px;
+    background: var(--color-primary);
     font-family: "Inter", sans-serif;
     margin: 0;
 }
@@ -21,8 +21,6 @@ body{
   /* Colores principales */
   --color-bg-light: #dcf2fc;
   --color-shadow: rgba(0, 0, 0, 0.1);
-
-  /* Puedes ir agregando más según los uses, por ejemplo: */
   --color-primary: #3498db;     /* Un azul para botones o links */
   --color-accent: #1abc9c;      /* Verde azulado para resaltar cosas */
   --color-text-dark: #444444;   /* Texto oscuro */
@@ -35,6 +33,8 @@ body{
   --gold-metallic: #c9b037; /* Dorado metálico */
   --gold-champagne: #f7e7ce;/* Dorado champán, elegante y sutil */
   --gold-brown: #8b7500;    /* Dorado con toque marrón viejo */
+  --naranga-brillante: #F77F00;
+  --amarillo-mostaza: #FFD166;
 }
 
 
@@ -45,7 +45,7 @@ body{
     top:0%;
     left: 0%;
     height: 80px;
-    background: var(--color-bg-light);
+    background: var(--color-text-light);
     z-index: 1000;
     box-shadow: 0px 5px 10px var(--color-shadow);
 }
@@ -100,8 +100,8 @@ body{
 }
 
 .nav span a{
-    color: #757474b6;
-    font-size: 50px;
+    color: var(--color-text-dark);
+    font-size: 40px;
     text-decoration: none;
     border-radius: 50%;
 }
@@ -110,7 +110,12 @@ body{
 @media (max-width: 768px) {
 
     body{
-        overflow: hidden;
+        overflow-x: hidden;
+}
+
+    
+html{
+    overflow-x: hidden;
 }
 
     .nav-toggle{
@@ -125,7 +130,7 @@ body{
 }
 
 .head{
-     background: var(--color-bg-light);
+    background: var(--color-text-light);
     height: 60px;
     max-width: 100%;
     margin: 0;
@@ -144,7 +149,7 @@ body{
   width: 100%;  
   height: 350px;
   margin: 0px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px var(--color-shadow);
   top: 60px;
   left: 0;
   transform: translateX(115%); /* se oculta a la derecha */
@@ -193,28 +198,92 @@ body{
 }
 
 .contenedor-fondo-1{
-    width: auto;
-}
-
-.fondo_1{
-    background-image: url('img/study-7217599_1280.jpg');
+    background-image: url('img/fondo-encabezado.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 38rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 45rem;
+    padding: 80px 0 0 0;
 }
 
-.fondo_1 h2{
-    color: #fcfd9c;
-    margin-left: 35%;
-    margin-top: -20%;
-    padding: 10%;
-    font-size: 35px;
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    height: 100%;
 }
+
+.encabezado h1,
+.encabezado p{
+  max-width: 1900px;
+  margin: 0 auto 10px auto;
+  cursor: default;
+  text-align: left;
+  width: 100%;
+}
+
+/* 💼 TÍTULO con impacto real */
+.encabezado h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: var(--naranga-brillante);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-shadow: 0 7px 10px var(--color-shadow);
+  margin-bottom: 1rem;
+}
+
+/* 🧠 TEXTO más limpio, más formal, mejor legible */
+.encabezado p {
+  font-size: 1.13rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  line-height: 1.7;
+  text-shadow: 0 5px 10px var(--color-shadow);
+}
+
+/* Botón atractivo: azul vibrante con transición */
+.botones{
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  max-width: 200px;
+}
+
+.botones:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+}
+
+
+/* 📱 Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-fondo-1{
+        height: 30rem;
+    }
+}
+
+/* 📱 Extra pequeño (teléfonos muy chicos) */
+@media (max-width: 480px) {
+    body{
+        overflow: hidden;
+    };
+    .encabezado {
+        height: 24rem;
+        background-position: center top;
+    }
+}
+
 
 .cards-img{
     display: flex;
@@ -249,6 +318,8 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .contenedor-block{
@@ -256,11 +327,15 @@ body{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 800px;
 }
 
 .contenedor-block .titulo {
     text-align: center;
+    padding: 20px 0;
+    background: var(--color-text-light);
+    width: 100%;
 }
 
 
@@ -308,21 +383,8 @@ body{
     
 }
 
-
-.enviar{
-    border: none;
-    padding: 10px 19px;
-    background: var(--color-primary);
-    border-radius: 10px 0px;
-    color: #ffffff;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 200;
-}
-
 .contenedor-cards-p{
-    background-color: white;
+    background-color: var(--color-text-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,13 +392,14 @@ body{
 }
 
 .subtext{
-    background-color: white;
+    background-color: var(--color-text-light);
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 30px 0;
 }
 
 .subtext h2{
@@ -346,10 +409,11 @@ body{
 
 .contenedor-2{
     display: flex;
-    padding: 10px; 
+    padding: 10px 0; 
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    margin: 0;
 }
 
 .crad-problem{
@@ -365,7 +429,6 @@ body{
     flex-direction: column;
     padding: 15px;
     cursor: default;
-    margin-bottom: 5%;
 }
 
 .crad-problem p{
@@ -381,8 +444,7 @@ body{
     border: 1px gray dashed;
     padding: 2px;
 }
-
-.crad-problem::-webkit-scrollbar{
+.contenedor-2::-webkit-scrollbar{
     display: none;
 }
 
@@ -398,12 +460,6 @@ body{
     width: 100%;
     overflow-x: auto;
     margin-top: 5%;
-}
-
-.fondo_1 h2{
-    margin: 10%;
-    font-size: 25px;
-    background: rgba(0, 0, 0, 0.274);
 }
 
 .contenerdor-body{
@@ -424,6 +480,10 @@ body{
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
     white-space: normal;
 }
+
+.subtext{
+    padding: 20px 0;
+}
 }
 
 
@@ -432,11 +492,11 @@ body{
     justify-content: space-around;
     align-items: center;
     overflow-x: auto;
-    padding: 6% 6%;
+    overflow-y: hidden;
+    padding: 0 25px;
     width: 100%;
     gap: 15px;
-    height: auto;
-    min-height: 36rem;
+    height: 43rem;
 }
 
 .contenedor-planes .card-planes{
@@ -444,11 +504,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
     min-width: 20rem;
-    height: 100%;
-    padding: 30px;
-    border: 1px solid #1e90ff;
-    background-color: rgb(255, 255, 255);
+    height: 30rem;
+    padding: 20px;
+    background-color: var(--color-text-light);
     border-radius: 10px;
     gap: 20px;
     box-shadow: 0px 6px 10px rgba(29, 29, 29, 0.397);
@@ -465,7 +525,7 @@ body{
 .fade-in-right{
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .anim-fade-in.visible {
@@ -535,7 +595,6 @@ body{
 }
 
 .section .servicios{
-    border: 1px solid var(--color-primary);
     padding: 2%;
     border-radius: 10px;
     transition: all .5s ease;
@@ -555,7 +614,7 @@ body{
 
 @media (max-width: 768px){
     .contenedor-planes{
-        max-height: 30rem;
+        max-height: 35rem;
     }
 
     .contenedor-planes::-webkit-scrollbar{
