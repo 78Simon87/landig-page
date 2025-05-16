@@ -1,5 +1,5 @@
 const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".list");
+const navMenu = document.querySelector(".nav");
 
 navToggle.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevenir propagación para que no cierre de inmediato
