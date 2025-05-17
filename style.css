@@ -669,7 +669,6 @@ body{
     }
 
     .contenedor-planes .card-planes{
-        border: red 1px solid;
         object-fit: contain;
         overflow: hidden;
         height: 100%;
